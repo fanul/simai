@@ -56,20 +56,20 @@
                         <div class="dev-email-navigation-labels">
                             <ul>
                                 <div class="title">Kertas Kerja Audit</div>     
-                                <li><a href="#" class="active"><i class="fa fa-sitemap"></i> Semua Kertas Kerja</a></li>
-                                <li><a href="#"><i class="fa fa-user"></i> Agus</a></li>
-                                <li><a href="#"><i class="fa fa-user"></i> Fadhil</a></li>
-                                <li><a href="#"><i class="fa fa-user"></i> Fahreza</a></li>
+                                <li><a href="index-pelaksanaan-audit-input-kesimpulan.php" class="active"><i class="fa fa-sitemap"></i> Semua Kertas Kerja</a></li>
+                                <li><a href="index-pelaksanaan-audit-input-kesimpulan.php"><i class="fa fa-user"></i> Agus</a></li>
+                                <li><a kesimpulanf="index-pelaksanaan-audit-input-kesimpulan.php"><i class="fa fa-user"></i> Fadhil</a></li>
+                                <li><a href="index-pelaksanaan-audit-input-kesimpulan.php"><i class="fa fa-user"></i> Fahreza</a></li>
                             </ul>
                         </div>
 
                         <div class="dev-email-navigation-labels">
                             <ul>
                                 <div class="title">Temuan</div>
-                                <li><a href="#"><i class="fa fa-sort-amount-asc"></i> Semua Temuan</a></li>
-                                <li><a href="#"><i class="fa fa-user"></i> Agus</a></li>
-                                <li><a href="#"><i class="fa fa-user"></i> Fadhil</a></li>
-                                <li><a href="#"><i class="fa fa-user"></i> Fahreza</a></li>
+                                <li><a href="index-pelaksanaan-audit-input-temuan.php"><i class="fa fa-sort-amount-asc"></i> Semua Temuan</a></li>
+                                <li><a href="index-pelaksanaan-audit-input-temuan.php"><i class="fa fa-user"></i> Agus</a></li>
+                                <li><a href="index-pelaksanaan-audit-input-temuan.php"><i class="fa fa-user"></i> Fadhil</a></li>
+                                <li><a href="index-pelaksanaan-audit-input-temuan.php"><i class="fa fa-user"></i> Fahreza</a></li>
                             </ul>
                         </div>
 
@@ -142,9 +142,9 @@
                                 </div>                                            
                             </div>
                             <div class="dev-email-messages-list-item-info">
-                               <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 3) </div>
-                               <div class="time">KKA.01</div> 
-                               <div class="message">
+                             <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 3) </div>
+                             <div class="time">KKA.01</div> 
+                             <div class="message">
                                 diisi dengan berbagai macam kemungkinan yang mau ditampilkan khususnya dalam informasi Program Audit
                             </div>
                         </div>
@@ -191,8 +191,7 @@
                         </textarea>
                     </div>
                     <div class="form-group">
-                        <input type="file" name="file_1" class="file"/>
-                        <button class="btn btn-danger pull-right">Isi</button>
+                    <input type="file" name="file_1" class="file"/>
                     </div>
                 </div>
                 
@@ -205,12 +204,16 @@
                     <div class="row">
                         <div class="col-md-12">                        
                             <div class="form-group form-group-custom">
-                                <?php include "index-setup-proses-modal-proses4-table.php" ?>
+                                <?php include "index-pelaksanaan-audit-nilai-simpulan.php" ?>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
+                <div class="form-group">
+                    <button class="btn btn-danger pull-right">Isi</button>
+                </div>
 
             </div>
             <!-- ./email message -->

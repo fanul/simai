@@ -32,15 +32,10 @@
                 <a href="#"><i class="fa fa-file-o"></i> <span>Setup</span></a>
                 <ul>
                     <li>
-                     
-                        <li><a href="index-setup-proses.php">Proses - Proses</a></li>                                                       
+
+                    <li><a href="index-setup-proses.php">Proses Audit</a></li>                                                       
                     </ul>
                 </li>
-            </li>
-
-
-            <li>
-                <a href="index-pelaksanaan-audit.php"><i class="fa fa-file-o"></i> <span>Pelaksanaan Audit</span></a>
             </li>
 
             <li>
@@ -51,6 +46,13 @@
                     </ul>
                 </li>
             </li>
+
+
+            <li>
+                <a href="index-pelaksanaan-audit.php"><i class="fa fa-file-o"></i> <span>Pelaksanaan Audit</span></a>
+            </li>
+
+
 
             <li>
                 <a href="index-tl-audit.php"><i class="fa fa-file-o"></i> <span>Tindak Lanjut Audit</span></a>

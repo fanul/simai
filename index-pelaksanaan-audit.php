@@ -97,7 +97,7 @@
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input.php" class="fa fa-share-square-o"></a>
+                                        <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="fa fa-share-square-o"></a>
                                     </div>
                                 </td>
                                 <td>2016</td>
@@ -109,7 +109,7 @@
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <input type="checkbox" id="check_2"/><label for="check_2"></label>
+                                        <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="fa fa-share-square-o"></a>
                                     </div>
                                 </td>
                                 <td>2016</td>
@@ -121,7 +121,7 @@
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <input type="checkbox" id="check_3"/><label for="check_3"></label>
+                                        <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="fa fa-share-square-o"></a>
                                     </div>
                                 </td>
                                 <td>2015</td>
