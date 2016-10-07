@@ -30,7 +30,7 @@
     <body>
         <!-- set loading layer -->
         <div class="dev-page-loading preloader"></div>
-        <!-- ./set loading layer -->       
-        
-        <!-- page wrapper -->
-        <div class="dev-page">
+        <!-- ./set loading layer --> 
+
+            <!-- page header -->    
+    <div class="dev-page">

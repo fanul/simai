@@ -55,7 +55,7 @@
 
 
             <li>
-                <a href="index-tl-audit.php"><i class="fa fa-file-o"></i> <span>Tindak Lanjut Audit</span></a>
+                <a href="index-tindak-lanjut.php"><i class="fa fa-file-o"></i> <span>Tindak Lanjut Audit</span></a>
             </li>
 
             <!-- ./contoh menu -->        

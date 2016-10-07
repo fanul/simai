@@ -1,6 +1,6 @@
 <?php include "include-header.php" ?>
 
-]<!-- page header -->    
+<!-- page header -->    
 <div class="dev-page-header">
 
     <div class="dph-logo">
@@ -52,7 +52,7 @@
 
                 <ul class="breadcrumb">
                     <li><a href="#">Listboard</a></li>                                
-                    <li>Pelaksanaan Audit</li>
+                    <li>Tindak Lanjut Audit</li>
                 </ul>
 
 
@@ -65,8 +65,8 @@
             <!-- datatables plugin -->
             <div class="wrapper wrapper-white">
                 <div class="page-subtitle">
-                    <h3>Pelaksanaan Audit</h3>
-                    <p>Berisi tentang alur pelaksanaan audit</p>
+                    <h3>Tindak Lanjut Audit</h3>
+                    <p>Berisi tentang alur Tindak Lanjut audit</p>
                 </div> 
 
                 <div class="table-responsive">
@@ -76,20 +76,18 @@
                                 <th>Icon</th>
                                 <th>Tahun</th>
                                 <th>Auditee</th>
-                                <th>Banyak PA</th>
                                 <th>Banyak Temuan</th>
-                                <th>% progress</th>
+                                <th>Temuan Tuntas</th>
                             </tr>
                         </thead> 
                         
                         <tfoot>
                             <tr>
                                 <th></th>
-                                <th>2016</th>
-                                <th>Pelayanan</th>
-                                <th>Pelayanan Klaim</th>
-                                <th>Klaim JHT</th>
-                                <th>Nama PA</th>
+                                <th>Tahun</th>
+                                <th>Auditee</th>
+                                <th>Banyak Temuan</th>
+                                <th>Temuan Tuntas</th>
                             </tr> 
                         </tfoot>
                         
@@ -97,38 +95,35 @@
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="fa fa-share-square-o"></a>
+                                        <a href="index-tindak-lanjut-input.php" class="fa fa-share-square-o"></a>
                                     </div>
                                 </td>
                                 <td>2016</td>
-                                <td>Pemasaran</td>
-                                <td>Pengelolaan Kepesertaan</td>
-                                <td>Pemadanan Data</td>
-                                <td>Nama PA...</td>
+                                <td>Jember</td>
+                                <td>20</td>
+                                <td>18</td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="fa fa-share-square-o"></a>
+                                        <a href="index-tindak-lanjut-input.php" class="fa fa-share-square-o"></a>
                                     </div>
                                 </td>
                                 <td>2016</td>
-                                <td>Pelayanan</td>
-                                <td>Pelayanan Klaim</td>
-                                <td>Klaim JHT</td>
-                                <td>Nama PA...</td>
+                                <td>malang</td>
+                                <td>20</td>
+                                <td>18</td>
                             </tr> 
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="fa fa-share-square-o"></a>
+                                        <a href="index-tindak-lanjut-input.php" class="fa fa-share-square-o"></a>
                                     </div>
                                 </td>
-                                <td>2015</td>
-                                <td>SDM/UMUM</td>
-                                <td>Pengadaan Belanja Modal</td>
-                                <td>Belanja Modal Non-Kap</td>
-                                <td>Nama PA...</td>                                 
+                                <td>2016</td>
+                                <td>medan</td>
+                                <td>5</td>
+                                <td>1</td>                               
                             </tr>
 
                         </tbody>

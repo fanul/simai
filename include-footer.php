@@ -10,6 +10,9 @@
                 <!-- page footer buttons -->
                 <ul class="dev-page-footer-buttons">                    
                     <li><a href="#footer_content_1" class="dev-page-footer-container-open tip" title="summary audit yang berjalan"><i class="fa fa-database"></i></a></li>
+                    <li><a href="#footer_content_3" class="dev-page-footer-container-open tip" title="Buka Notifikasi"><i class="fa fa-server">
+                        <span class="notiff">10</span>
+                    </i></a></li>
                     <!-- demo 2                     
                     <li><a href="#footer_content_2" class="dev-page-footer-container-open"><i class="fa fa-bar-chart"></i></a></li>
                     <!-- ./demo 2 -->
@@ -108,12 +111,18 @@
                     </div>
                     <!-- ./informers -->
                     
-                    <!-- projects -->
+
+                     <!-- projects -->
                     <div class="dev-page-footer-container-content" id="footer_content_3">                        
                         <ul class="dev-list-projects">
+                            <li><a href="index-tindak-lanjut.php" class="active">
+                            10 Temuan 
+                            <br>belum ditindak lanjuti
+                            </a></li>
                         </ul>                        
                     </div>
                     <!-- ./projects -->
+
                 </div>
                 <!-- ./page footer container -->
                 

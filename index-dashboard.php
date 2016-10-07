@@ -1,4 +1,8 @@
             <?php include "include-header.php" ?> 
+
+        <!-- page wrapper -->
+        <div class="dev-page">
+            
         <!-- page header -->    
             <div class="dev-page-header">
                 
