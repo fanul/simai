@@ -22,7 +22,7 @@
                                 <span> 2016 <br>Jakarta Kelapa Gading</span>
                             </a>
                         </div>
-
+                        <!-- 
                         <div class="dev-email-navigation-labels">
                             <ul>
                                 <div class="title">Kertas Kerja Audit</div>     
@@ -32,7 +32,7 @@
                                 <li><a href="index-pelaksanaan-audit-input-kesimpulan.php"><i class="fa fa-user"></i> Fahreza</a></li>
                             </ul>
                         </div>
-
+                        -->
                         <div class="dev-email-navigation-labels">
                             <ul>
                                 <div class="title">Temuan</div>
@@ -41,7 +41,7 @@
                                 <li><a href="index-pelaksanaan-audit-input-temuan.php"><i class="fa fa-user"></i> Fadhil</a></li>
                                 <li><a href="index-pelaksanaan-audit-input-temuan.php"><i class="fa fa-user"></i> Fahreza</a></li>
                             </ul>
-                    </div>
+                        </div>
 
                     </div>
                     <!-- ./email navigation -->
@@ -55,8 +55,7 @@
                                 <label for="email_messages_checkall">&nbsp;</label>
                             </div>
                             <div class="btn-group pull-right">
-                                <button class="btn btn-default" data-toggle="modal" data-target="#modal_approve_pelaksanaan"><i class="fa fa-check-square">&nbsp; Approve</i></button>    
-                                <button class="btn btn-default" data-toggle="modal" data-target="#modal_approve_pelaksanaan"><i class="fa fa-check-square">&nbsp; Review</i></button>                                    
+                                <button class="btn btn-default" data-toggle="modal" data-target="#modal_approve_pelaksanaan"><i class="fa fa-check-square">&nbsp; Approve Selected</i></button>                                        
                             </div>
                         </div>
 
@@ -94,7 +93,10 @@
                                 <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 2) </div>
                                 <div class="time">KKA.01</div>  
                                 <div class="message">
-
+                                    Langkah Pemeriksaan :
+                                    <br> 1. Melakukan ini itu
+                                    <br> 2. Melakukan itu itu
+                                    <br> 3. Melakukan ini ini
                                 </div>
                             </div>
                         </div>
@@ -106,14 +108,14 @@
                                     <label for="email_message_3">&nbsp;</label>
                                 </div>
                                 <div class="star">
-                                    <i class="fa fa-lock"></i>
+                                    <i class="fa fa-star-o"></i>
                                 </div>                                            
                             </div>
                             <div class="dev-email-messages-list-item-info">
                                <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 3) </div>
                                <div class="time">KKA.01</div> 
                                <div class="message">
-
+                                diisi dengan berbagai macam kemungkinan yang mau ditampilkan khususnya dalam informasi Program Audit
                             </div>
                         </div>
                     </div>
@@ -253,7 +255,7 @@
                     </div>
                     <!-- ./tab temuan -->
 
-                    <?php include "index-pelaksanaan-audit-input-temuan-table.php" ?>
+                    <?php include "index-pelaksanaan-audit-input-temuan-tablefraud.php" ?>
             </div>
 
         </div>

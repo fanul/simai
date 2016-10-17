@@ -142,9 +142,9 @@
                                 </div>                                            
                             </div>
                             <div class="dev-email-messages-list-item-info">
-                             <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 3) </div>
-                             <div class="time">KKA.01</div> 
-                             <div class="message">
+                               <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 3) </div>
+                               <div class="time">KKA.01</div> 
+                               <div class="message">
                                 diisi dengan berbagai macam kemungkinan yang mau ditampilkan khususnya dalam informasi Program Audit
                             </div>
                         </div>
@@ -191,7 +191,7 @@
                         </textarea>
                     </div>
                     <div class="form-group">
-                    <input type="file" name="file_1" class="file"/>
+                        <input type="file" name="file_1" class="file"/>
                     </div>
                 </div>
                 
@@ -209,7 +209,7 @@
                         </div>
                     </div>
                 </div>
-
+                
 
                 <div class="form-group">
                     <button class="btn btn-danger pull-right">Isi</button>
@@ -217,10 +217,14 @@
 
             </div>
             <!-- ./email message -->
+        
+
+            <?php include "include-copyright.php" ?>
+
         </div>
-        <!-- ./email template -->                        
+        <!-- ./email template -->
+
 
     </div>
     <!-- ./page content container -->
-
     <?php include "include-footer.php" ?>

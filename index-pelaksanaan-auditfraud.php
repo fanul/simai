@@ -5,9 +5,9 @@
 
 
 
-    <!-- contoh menu -->                        
-    <?php include "include-menu.php" ?>
-    <!-- ./contoh menu -->        
+            <!-- contoh menu -->                        
+            <?php include "include-menu.php" ?>
+            <!-- ./contoh menu -->        
 
 
 
@@ -71,9 +71,7 @@
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="btn btn-primary tip" title="Isi Kesimpulan">Kesimpulan</a>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="index-pelaksanaan-audit-input-temuan.php" class="btn btn-primary tip" title="Isi temuan">Temuan</a>
+                                        <a href="index-pelaksanaan-audit-input-temuanfraud.php" class="glyphicon glyphicon-ban-circle tip" title="Isi temuan"></a>
                                     </div>
 
                                 </td>
@@ -87,10 +85,9 @@
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="btn btn-primary tip" title="Isi Kesimpulan">Kesimpulan</a>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="index-pelaksanaan-audit-input-temuan.php" class="btn btn-primary tip" title="Isi temuan">Temuan</a>
-                                    </divx
+                                        <a href="index-pelaksanaan-audit-input-temuanfraud.php" class="glyphicon glyphicon-ban-circle tip" title="Isi temuan"></a>
+                                    </div>
+
                                 </td>
                                 <td>2016</td>
                                 <td>Medan</td>
@@ -102,9 +99,7 @@
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="btn btn-primary tip" title="Isi Kesimpulan">Kesimpulan</a>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="index-pelaksanaan-audit-input-temuan.php" class="btn btn-primary tip" title="Isi temuan">Temuan</a>
+                                        <a href="index-pelaksanaan-audit-input-temuanfraud.php" class="glyphicon glyphicon-ban-circle tip" title="Isi temuan"></a>
                                     </div>
                                 </td>
                                 <td>2015</td>

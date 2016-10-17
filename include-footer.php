@@ -1,7 +1,7 @@
             <div class="dev-page-footer dev-page-footer-fixed"> <!-- dev-page-footer-closed dev-page-footer-fixed -->
                 <ul class="dev-page-footer-controls">
                     <li><a href="pages-login.html" class="tip" title="Login"><i class="fa fa-power-off"></i></a></li>
-                   
+
                     <li class="pull-right">
                         <a class="dev-page-sidebar-minimize tip" title="Toggle navigation"><i class="fa fa-outdent"></i></a>
                     </li>
@@ -21,7 +21,7 @@
                 <!-- ./page footer buttons -->
                 <!-- page footer container -->
                 <div class="dev-page-footer-container">
-                    
+
                     <!-- loader and close button -->
                     <div class="dev-page-footer-container-layer">
                         <a href="#" class="dev-page-footer-container-layer-button"></a>
@@ -48,27 +48,27 @@
                                 </div>
                                 <div class="info">
                                     <h5>Temuan <br> Audit Internal<h5>
-                                    <p>Tuntas- <strong>75</strong></p>
-                                    <p>Belum Tuntas - <strong>25</strong></p>
-                                    <p class="text-higlight">Total Temuan 100</p>
+                                        <p>Tuntas- <strong>75</strong></p>
+                                        <p>Belum Tuntas - <strong>25</strong></p>
+                                        <p class="text-higlight">Total Temuan 100</p>
+                                    </div>
                                 </div>
+
+                                <div class="dev-list-informers-item">
+                                    <div class="chart">
+                                        <input class="knob" data-width="100" data-max="100" data-fgColor="#82b440" value="62" data-thickness=".1"/>
+                                    </div>
+                                    <div class="info">
+                                        <h5>Temuan <br> Audit Internal<h5>
+                                            <p>Tuntas- <strong>62</strong></p>
+                                            <p>Belum Tuntas - <strong>38</strong></p>
+                                            <p class="text-higlight">Total Temuan 100</p>
+                                        </div>
+                                    </div>                            
+                                </div>                        
                             </div>
-                            
-                            <div class="dev-list-informers-item">
-                                <div class="chart">
-                                    <input class="knob" data-width="100" data-max="100" data-fgColor="#82b440" value="62" data-thickness=".1"/>
-                                </div>
-                                <div class="info">
-                                    <h5>Temuan <br> Audit Internal<h5>
-                                    <p>Tuntas- <strong>62</strong></p>
-                                    <p>Belum Tuntas - <strong>38</strong></p>
-                                    <p class="text-higlight">Total Temuan 100</p>
-                                </div>
-                            </div>                            
-                        </div>                        
-                    </div>
-                    <!-- ./informers -->
-                    
+                            <!-- ./informers -->
+
                     <!-- informers 
                     <div class="dev-page-footer-container-content" id="footer_content_2">                        
                         <div class="dev-list-informers">                            
@@ -112,12 +112,12 @@
                     <!-- ./informers -->
                     
 
-                     <!-- projects -->
+                    <!-- projects -->
                     <div class="dev-page-footer-container-content" id="footer_content_3">                        
                         <ul class="dev-list-projects">
                             <li><a href="index-tindak-lanjut.php" class="active">
-                            10 Temuan 
-                            <br>belum ditindak lanjuti
+                                10 Temuan 
+                                <br>belum ditindak lanjuti
                             </a></li>
                         </ul>                        
                     </div>
@@ -137,11 +137,11 @@
             <div class="dev-search">
                 <div class="dev-search-container">
                     <div class="dev-search-form">
-                    <form action="index.html" method="post">
-                        <div class="dev-search-field">
-                            <input type="text" placeholder="Search..." value="Nature">
-                        </div>                        
-                    </form>
+                        <form action="index.html" method="post">
+                            <div class="dev-search-field">
+                                <input type="text" placeholder="Search..." value="Nature">
+                            </div>                        
+                        </form>
                     </div>
                     <div class="dev-search-results"></div>
                 </div>
@@ -149,6 +149,19 @@
             <!-- page search -->            
         </div>
         <!-- ./page wrapper -->
+
+
+          <!-- gallery -->
+        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+        </div>
+        <!-- ./gallery -->
 
         <!-- javascript -->
         <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>       
@@ -166,7 +179,7 @@
         <script type="text/javascript" src="js/plugins/smartwizard/jquery.smartWizard.js"></script>
         
         <script type="text/javascript" src="js/plugins/nvd3/d3.min.js"></script>
-        <script type="text/javascript" src="js/plugins/nvd3/nv.d3.min.js"></script>
+        <script type="text/javascript" src="js/plugins/nvd3/nv.d3.min2.js"></script>
         <script type="text/javascript" src="js/plugins/nvd3/lib/stream_layers.js"></script>
         
         <script type="text/javascript" src="js/plugins/waypoint/waypoints.min.js"></script>
@@ -180,7 +193,9 @@
         <script type="text/javascript" src="js/plugins/tags-input/jquery.tagsinput.min.js"></script>
         <script type="text/javascript" src="js/plugins/jstree/jstree.min.js"></script>
         
-                
+        <script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js"></script>
+        
+
         <!-- <script type="text/javascript" src="js/dev-settings.js"></script> -->
         <script type="text/javascript" src="js/dev-loaders.js"></script>
         <script type="text/javascript" src="js/dev-layout-default.js"></script>
@@ -188,16 +203,81 @@
         <script type="text/javascript" src="js/dev-app.js"></script>
         <script type="text/javascript" src="js/demo-dashboard.js"></script>
         <script type="text/javascript" src="js/dev-email.js"></script>
+        <script type="text/javascript" src="js/demo-charts.js"></script>
+        
+        <!-- dari gallery -->
+        <script type="text/javascript" src="js/plugins/isotope/isotope.pkgd.min.js"></script>        
+        <script type="text/javascript" src="js/plugins/blueimp/jquery.blueimp-gallery.min.js"></script>   
+        <script type="text/javascript" src="js/plugins/unveil/jquery.unveil.js"></script>
+        <!-- ./dari gallery -->
+
         <!-- ./javascript -->
 
         <!-- tambahan -->
         <script type="text/javascript">
-            function backToTop () {
-                window.scrollTo(0, 0);
-            }
-        </script>
-        <!-- ./tambahan -->
+           
+           $(window).load(function(){
+            $('.dev-email-message').hide();
+        });
+        
+
+        $(".dev-email-messages-list-item-info").click(function(){
+            $('.dev-email-message').toggle();
+        });
+
+        function showProfile(){
+            $('#modal_people_profile').modal('show');
+        }
+
+        function backToTop () {
+            window.scrollTo(0, 0);
+        }
+
+        /* dari gallery */
+
+        if (document.images) {
+            img1 = new Image();
+            img2 = new Image();
+
+            img1.src = "persiapan1.jpg";
+            img2.src = "persiapan2.jpg";
+
+        }
 
         
-    </body>
+
+        $(function(){                
+            setTimeout(function(){
+
+                $("img").unveil(200);
+                
+                $('.gallery.isotope').isotope({
+                    itemSelector: '.gallery-item',
+                    percentPosition: true,
+                    masonry: {                 
+                      columnWidth: '.gallery-sizer',
+                      gutter: '.gallery-gutter'
+                  }                
+              });                
+
+                document.getElementById('gallery').onclick = function (event) {
+                    event = event || window.event;
+                    var target = event.target || event.srcElement,
+                    link = target.src ? target.parentNode : target,
+                    options = {index: link, event: event},
+                    links = this.getElementsByTagName('a');
+                    blueimp.Gallery(links, options);
+                };
+
+            },200);
+
+        });
+        /* ./dari gallery */
+
+
+    </script>
+    <!-- ./tambahan -->
+
+
+</body>
 </html>

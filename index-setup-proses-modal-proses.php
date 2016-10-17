@@ -10,7 +10,7 @@
                 <div class="form-group-one-unit">
                     <!-- basic wizard -->
                     <div class="row">
-                        <div class="wizard">
+                        <div class="wizard show-submit">
                             <ul>
                                 <li>
                                     <a href="#step-1">
@@ -38,6 +38,15 @@
                                 </li>
                             </ul>
                             <div id="step-1">
+
+                                <label> Akif , Non-Aktif </label>
+                                <br>
+                                <label class="switch">
+                                    <input type="checkbox" name="switch_1" value="1" checked />
+                                    <span></span>
+                                </label>
+                                
+                                <br><br>
 
                                 <label>Pilih <span>level 1</span> &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_form_tambah_level1">+ level 1</button></label>
                                 <select class="form-control selectpicker" data-live-search="true">
@@ -67,7 +76,7 @@
                             </div>
                             <div id="step-2">
 
-                               <div class="form-group-one-unit">
+                             <div class="form-group-one-unit">
                                 <div class="row">
                                     <div class="col-md-12">                        
                                         <div class="form-group form-group-custom">
@@ -192,7 +201,7 @@
                                 </div>
                             </div>
 
-                             <div class="form-group-one-unit">
+                            <div class="form-group-one-unit">
                                 <div class="row">
                                     <div class="col-md-12">                        
                                         <div class="form-group form-group-custom">

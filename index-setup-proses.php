@@ -1,41 +1,12 @@
 <?php include "include-header.php" ?>
 
-<!-- page header -->    
-<div class="dev-page-header">
-
-    <div class="dph-logo">
-        <a href="index.html">Setup Proses</a>
-        <a class="dev-page-sidebar-collapse">
-            <div class="dev-page-sidebar-collapse-icon">
-                <span class="line-one"></span>
-                <span class="line-two"></span>
-                <span class="line-three"></span>
-            </div>
-        </a>
-    </div>
-
-    <!--
-    <ul class="dph-buttons pull-right">                    
-        <li class="dph-button-stuck">
-            <a href="#" class="dev-page-search-toggle">
-                <div class="dev-page-search-toggle-icon">
-                    <span class="circle"></span>
-                    <span class="line"></span>
-                </div>
-            </a>
-        </li>                    
-    </ul>                                                
--->
-</div>
-<!-- ./page header -->
-
 <!-- page container -->
 <div class="dev-page-container">
 
-            <!-- contoh menu -->                        
-            <?php include "include-menu.php" ?>
-            <!-- ./contoh menu -->        
-            
+    <!-- contoh menu -->                        
+    <?php include "include-menu.php" ?>
+    <!-- ./contoh menu -->        
+
     <!-- page content -->
     <div class="dev-page-content">                    
         <!-- page content container -->
@@ -45,7 +16,7 @@
             <div class="page-title">
 
                 <ul class="breadcrumb">
-                    <li><a href="#">Listboard</a></li>                                
+                    <li><a href="index-dashboard.php">SIMAI</a></li>                                
                     <li>Setup Proses Audit</li>
                 </ul>
 
@@ -59,12 +30,18 @@
             <!-- datatables plugin -->
             <div class="wrapper wrapper-white">
                 <div class="page-subtitle">
-                    <h3>tambah proses</h3>
+                    <h3>Program Audit</h3>
                     <p>Berisi tentang tambah proses yang akan dilakukan</p>
                 </div> 
 
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_form_setup_proses">Tambah proses</button>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_form_setup_proses">Edit</button>
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_form_setup_proses">Tambah proses</button> -->
+                <a href="index-setup-program-audit-input.php" class="btn btn-primary">+ Tambah PA</a>
+                <a href="index-setup-program-audit-input.php" class="btn btn-primary">Edit</a>
+
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_form_setup_proses">Edit</button> -->
+                <!--
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_form_setup_proses">Non-Aktifkan PA</button>
+                -->
                 <button type="button" class="btn btn-primary" onclick="ayoPrint()">Print</button>
 
 
@@ -73,6 +50,7 @@
                         <thead>
                             <tr>
                                 <th>pilih</th>
+                                <th>Status</th>
                                 <th>Tahun</th>
                                 <th>level 1</th>
                                 <th>level 2</th>
@@ -89,6 +67,7 @@
                         <tfoot>
                             <tr>
                                 <th></th>
+                                <th>Status</th>
                                 <th>2016</th>
                                 <th>Pelayanan</th>
                                 <th>Pelayanan Klaim</th>
@@ -109,6 +88,7 @@
                                         <input type="checkbox" id="check_1"/><label for="check_1"></label>
                                     </div>
                                 </td>
+                                <td>Aktif</td>
                                 <td>2016</td>
                                 <td>Pemasaran</td>
                                 <td>Pengelolaan Kepesertaan</td>
@@ -126,6 +106,7 @@
                                         <input type="checkbox" id="check_2"/><label for="check_2"></label>
                                     </div>
                                 </td>
+                                 <td>Aktif</td>
                                 <td>2016</td>
                                 <td>Pelayanan</td>
                                 <td>Pelayanan Klaim</td>
@@ -143,6 +124,7 @@
                                         <input type="checkbox" id="check_3"/><label for="check_3"></label>
                                     </div>
                                 </td>
+                                 <td> Non-AKtif</td>
                                 <td>2015</td>
                                 <td>SDM/UMUM</td>
                                 <td>Pengadaan Belanja Modal</td>

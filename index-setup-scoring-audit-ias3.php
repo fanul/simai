@@ -4,27 +4,36 @@
 
             <thead>
                 <tr>
-                    <th>Pilih</th>
-                    <th>Klasifikasi</th>
-                    <th>Deskripsi</th>
-                    <th>Penanggung Jawab</th>
+                    <!-- <th>Pilih</th> -->
+                    <th>Kantor Cabang</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>Nilai Periode Score</th>
                 </tr>
             </thead> 
 
             <tbody>
                 <tr>
+                    <!--
                     <td>
                         <div class="checkbox checkbox-inline">
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#">Edit</button>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#">delete</button>
                         </div>
                     </td>
-                    <td>Human Error</td>
-                    <td> atas tidak terdeteksinya potensi perusahaan belum terdaftar</td>
-                    <td>
-                        1. 45A - Divisi Keuangan<br>
-                        2. 908 - Kanwil Sulawesi
-                    </td>
+                    -->
+                    <td>903 - Kanwil Jakarta</td>
+                    <td>123</td>
+                    <td>456</td>
+                    <td>789</td>
+                    <td>11</td>
+                    <td>22</td>
+                    <td>123</td>
+                    <td>456</td>
                 </tr>
             </tbody>
 

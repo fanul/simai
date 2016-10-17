@@ -1,35 +1,5 @@
     <?php include "include-header.php" ?>
 
-    <!-- page header -->    
-    <div class="dev-page-header">
-
-        <div class="dph-logo">
-            <a href="index.html">Pelaksanaan Audit</a>
-            <a class="dev-page-sidebar-collapse">
-                <div class="dev-page-sidebar-collapse-icon">
-                    <span class="line-one"></span>
-                    <span class="line-two"></span>
-                    <span class="line-three"></span>
-                </div>
-            </a>
-        </div>
-
-            <!--
-            <ul class="dph-buttons pull-right">                    
-                <li class="dph-button-stuck">
-                    <a href="#" class="dev-page-search-toggle">
-                        <div class="dev-page-search-toggle-icon">
-                            <span class="circle"></span>
-                            <span class="line"></span>
-                        </div>
-                    </a>
-                </li>                    
-            </ul>                                                
-        -->
-    </div>
-    <!-- ./page header -->
-
-
     <!-- page container -->
     <div class="dev-page-container">
 
@@ -85,7 +55,8 @@
                                 <label for="email_messages_checkall">&nbsp;</label>
                             </div>
                             <div class="btn-group pull-right">
-                                <button class="btn btn-default"><i class="fa fa-check-square">&nbsp; Approve Selected</i></button>                                        
+                                <button class="btn btn-default" data-toggle="modal" data-target="#modal_approve_pelaksanaan"><i class="fa fa-check-square">&nbsp; Approve</i></button>
+                                <button class="btn btn-default" data-toggle="modal" data-target="#modal_approve_pelaksanaan"><i class="fa fa-check-square">&nbsp; Review</i></button>                                        
                             </div>
                         </div>
 
@@ -123,10 +94,7 @@
                                 <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 2) </div>
                                 <div class="time">KKA.01</div>  
                                 <div class="message">
-                                    Langkah Pemeriksaan :
-                                    <br> 1. Melakukan ini itu
-                                    <br> 2. Melakukan itu itu
-                                    <br> 3. Melakukan ini ini
+
                                 </div>
                             </div>
                         </div>
@@ -138,14 +106,14 @@
                                     <label for="email_message_3">&nbsp;</label>
                                 </div>
                                 <div class="star">
-                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-lock"></i>
                                 </div>                                            
                             </div>
                             <div class="dev-email-messages-list-item-info">
                              <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 3) </div>
                              <div class="time">KKA.01</div> 
                              <div class="message">
-                                diisi dengan berbagai macam kemungkinan yang mau ditampilkan khususnya dalam informasi Program Audit
+
                             </div>
                         </div>
                     </div>
@@ -166,14 +134,7 @@
                         <button class="btn btn-default"><i class="fa fa-prints"> &nbsp; Print</i></button>
                     </div>
                 </div>
-
-                <div class="dev-email-message-title">PA.01 - KK.01 - Perluasan Kepesertaan</div>
-                <div class="dev-email-message-from">
-                    <img src="assets/images/users/user_1.jpg"> Agus                                    
-                </div>
-                <div class="dev-email-message-date">
-                    17:55, 02 Oktober 2016
-                </div>
+                
                     <!--
                     <div class="dev-email-message-text">
                         <p>Hi John,</p>
@@ -184,39 +145,78 @@
                     </div>
                 -->
 
-                <div class="dev-email-message-form">
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Post a quick reply" rows="5">
-                            Dari Januari 2015 - Agustus 2016, diketahui bahwa kantor cabang tidak dapat melakukan pencatatan dengan baik. terdapat 1500 potensi yang tidak dilakukan penanggulangan dengan baik
-                        </textarea>
-                    </div>
-                    <div class="form-group">
-                    <input type="file" name="file_1" class="file"/>
-                    </div>
-                </div>
-                
-                <div class="dev-email-message-attachment">
-                    <strong>Kertas Kerja:</strong><br>
-                    <a href="#">2016-J01-KK.01-Agus.doc</a>, <a href="#">Data Potensi</a>
-                </div>
+                <div class="panel panel-default" id="email-panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">PA.01 - KK.01 - Perluasan Kepesertaan</h3>
+                        <ul class="panel-btn">
+                            <li><a href="#" class="btn btn-danger" onClick="dev_panel_fullscreen($(this).parents('.panel')); return false;"><i class="fa fa-compress"></i></a></li>
+                        </ul>
+                    </div>                                                                              
+                    <div class="panel-body">
 
-                <div class="form-group-one-unit">
-                    <div class="row">
-                        <div class="col-md-12">                        
-                            <div class="form-group form-group-custom">
-                                <?php include "index-pelaksanaan-audit-nilai-simpulan.php" ?>
+                        <!-- <div class="dev-email-message-title"></div> -->
+                        <div class="dev-email-message-from">
+                            <img src="assets/images/users/user_1.jpg"> Agus                                    
+                        </div>
+                        <div class="dev-email-message-date">
+                            17:55, 02 Oktober 2016
+                        </div>
+
+                        <div class="dev-email-message-form">
+                            <div class="form-group">
+                                <label> Hasil Desk-Audit :</label>
+                                <textarea class="form-control" placeholder="Post a quick reply" rows="5">
+                                    Dari Januari 2015 - Agustus 2016, diketahui bahwa kantor cabang tidak dapat melakukan pencatatan dengan baik. terdapat 1500 potensi yang tidak dilakukan penanggulangan dengan baik
+                                </textarea>
                             </div>
+                            <div class="form-group">
+                                <input type="file" name="file_1" class="file"/>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label> Hasil Field-Work :</label>
+                                <textarea class="form-control" placeholder="Post a quick reply" rows="5">
+                                    Dari Januari 2015 - Agustus 2016, diketahui bahwa kantor cabang tidak dapat melakukan pencatatan dengan baik. terdapat 1500 potensi yang tidak dilakukan penanggulangan dengan baik
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="file" name="file_1" class="file"/>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="form-group-one-unit">
+                            <div class="row">
+                                <div class="col-md-12">                        
+
+                                    <?php include "index-pelaksanaan-audit-nilai-simpulan.php" ?>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <button class="btn btn-danger pull-right">Isi</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-group">
-                    <button class="btn btn-danger pull-right">Isi</button>
-                </div>
 
             </div>
+
+            <!-- modal -->
+                <?php include "index-pelaksanaan-audit-approve.php" ?>
+            <!-- ./modal -->
+
             <!-- ./email message -->
+                <?php include "include-copyright.php" ?>
+
         </div>
         <!-- ./email template -->                        
 

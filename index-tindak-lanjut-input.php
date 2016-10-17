@@ -105,7 +105,7 @@
                                 -->
                             </div>
                             <div class="dev-email-messages-list-item-info">
-                                <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 1) </div>
+                                <div class="name">KODE TEMUAN TEM.2016.903.001 - Kartu belum dicetak  <br> (opsi tampilan 1) </div>
                                 <div class="time">KKA.01</div>
                                 <div class="message">
                                     Dari Januari 2015 - Agustus 2016, diketahui bahwa kantor cabang tidak dapat melakukan pencatatan dengan baik. terdapat 1500 potensi yang tidak dilakukan penanggulangan dengan baik
@@ -121,7 +121,7 @@
                                 </div>                                          
                             </div>
                             <div class="dev-email-messages-list-item-info">
-                                <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 2) </div>
+                                <div class="name">KODE TEMUAN TEM.2016.903.001 - Kartu belum dicetak  <br> (opsi tampilan 2) </div>
                                 <div class="time">KKA.01</div>  
                                 <div class="message">
                                     Langkah Pemeriksaan :
@@ -143,7 +143,7 @@
                                 </div>                                            
                             </div>
                             <div class="dev-email-messages-list-item-info">
-                             <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 3) </div>
+                             <div class="name">KODE TEMUAN TEM.2016.903.001 - Kartu belum dicetak  <br> (opsi tampilan 3) </div>
                              <div class="time">KKA.01</div> 
                              <div class="message">
                                 diisi dengan berbagai macam kemungkinan yang mau ditampilkan khususnya dalam informasi Program Audit
@@ -168,7 +168,15 @@
                     </div>
                 </div>
 
-                <div class="dev-email-message-title">PA.01 - KK.01 - Perluasan Kepesertaan</div>
+                <div class="panel panel-default" id="email-panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">KODE TEMUAN TEM.2016.903.001 - Kartu belum dicetak</h3>
+                        <ul class="panel-btn">
+                            <li><a href="#" class="btn btn-danger" onClick="dev_panel_fullscreen($(this).parents('.panel')); return false;"><i class="fa fa-compress"></i></a></li>
+                        </ul>
+                    </div>                                                                              
+                    <div class="panel-body">
+                        <!-- disini -->
                 <!--
                 <div class="dev-email-message-from">
                     <img src="assets/images/users/user_1.jpg"> Agus                                    
@@ -178,102 +186,130 @@
                 </div>
             -->
 
-
             <div class="dev-email-message-form">
 
-              <!-- START ACCORDION -->
+              <!-- START ACCORDION  -->
               <div class="panel-group accordion">
 
                 <div class="panel panel-default ">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#acc01">
-                                Jawaban Temuan #1
-                                <span  class="tl_waktu">17:55, 02 Oktober 2016</span>
+                                Historical Temuan
+                                <!-- <span  class="tl_waktu">17:55, 02 Oktober 2016</span> -->
                             </a>
                         </h4>
                     </div>                                
                     <div class="panel-body" id="acc01">
-                        <p>
-                            Kantor Cabang telah melakukan penon-aktifan Perusahaan tidak produktif dengan bukti screenshoot dari SIJTK
-                        </p>
-                        <div class="dev-email-message-attachment">
-                            <strong>Bukti Tindak Lanjut:</strong><br>
-                            <a href="#">Screenshoot SIJSTK 1.jpeg</a>, <a href="#">Screenshoot SIJSTK 2.jpeg</a>
+
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+                                <div class="timeline-item-date">15 Oktober 2016, 17:55</div>
+                                <div class="timeline-item-image"><img src="assets/images/users/user_3.jpg"></div>
+                                <div class="timeline-item-data">
+                                    <h4>Opini Awal</h4>
+                                    <p class="text-muted">Kami Mengakui adanya hal itu</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-item-date">17 Oktober 2016, 17:55</div>
+                                <div class="timeline-item-image"><img src="assets/images/users/user_3.jpg"></div>
+                                <div class="timeline-item-data">
+                                    <h4>Jawaban Tindak Lanjut #1</h4>
+                                    <p class="text-muted">Jawaban atas temuan telah diupload sesuai dengan tertera</p>
+                                    <div class="dev-email-message-attachment">
+
+                                        <strong>Bukti Tindak Lanjut:</strong><br>
+                                        <a href="#">Screenshoot SIJSTK 1.jpeg</a>, <a href="#">Screenshoot SIJSTK 2.jpeg</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item timeline-item-even">
+                                <div class="timeline-item-date">18 Oktober 2016, 17:55</div>
+                                <div class="timeline-item-image"><img src="assets/images/users/user_1.jpg"></div>
+                                <div class="timeline-item-data">
+                                    <h4>Feedback Tindak Lanjut #1</h4>
+                                    <p class="text-muted">Data kurang lengkap masih belum ada bukti non-aktif perusahaaan dari Disnaker</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-item-date">19 Oktober 2016, 17:55</div>
+                                <div class="timeline-item-image"><img src="assets/images/users/user_3.jpg"></div>
+                                <div class="timeline-item-data">
+                                   <h4>Jawaban Tindak Lanjut #2</h4>
+                                   <p class="text-muted">Data telah dilengkapi</p>
+                                   <div class="dev-email-message-attachment">
+
+                                    <strong>Bukti Tindak Lanjut:</strong><br>
+                                    <a href="#">disnaker.jpeg</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>                                
-                </div>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a href="#acc02">
-                                Feedback SPI #1
-                                <span  class="tl_waktu">17:55, 03 Oktober 2016</span>
-                            </a>
-                        </h4>
-                    </div>                                
-                    <div class="panel-body" id="acc02">
-                        <p>
-                            Temuan belum tuntas karena masih belum ada lampiran dari disnaker
-                        </p>
-                    </div>                                
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a href="#acc03">
-                                Jawaban Temuan #2
-                                <span  class="tl_waktu">17:55, 04 Oktober 2016</span>
-                            </a>
-                        </h4>
-                    </div>                                
-                    <div class="panel-body" id="acc03">
-                        <p>
-                            Telah dilampirkan surat penon-aktifan dari Disnaker
-                        </p>
-                        <div class="dev-email-message-attachment">
-                            <strong>Bukti Tindak Lanjut:</strong><br>
-                            <a href="#">Surat DIsnaker.jpeg</a>
+                        <div class="timeline-item timeline-item-even">
+                            <div class="timeline-item-date">18 Oktober 2016, 17:55</div>
+                            <div class="timeline-item-image"><img src="assets/images/users/user_1.jpg"></div>
+                            <div class="timeline-item-data">
+                                <h4>Feedback Tindak Lanjut #2</h4>
+                                <p class="text-muted">Data telah lengkap, temuan dinyatakan tuntas</p>
+                            </div>
                         </div>
-                    </div>                                
-                </div>
 
-                <div class="panel panel-default panel-opened">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a href="#acc04">
-                                <label>Feedback SPI #2</label>
-                                <span  class="tl_waktu">17:55, 05 Oktober 2016</span>
-                            </a>
-                        </h4>
-                    </div>                                
-                    <div class="panel-body" id="acc04">
-                        <p>
-                            Syarat sudah memenuhi untuk temuan dianggap tuntas                       </p>
-                        </div>                                
                     </div>
 
-                </div>
-                <!-- END ACCORDION -->                        
-
-            </div>
-            <hr>
-            <label>Isi Tindak Lanjut</label>
-            <div class="form-group">
-                <textarea class="form-control" placeholder="" rows="5">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <button class="btn btn-danger pull-right">Isi</button>
+                </div>                                
             </div>
 
         </div>
-        <!-- ./email message -->
+        <!-- END ACCORDION -->
+
+
     </div>
-    <!-- ./email template -->                        
+    <hr>
+    <label>Isi Tindak Lanjut</label>
+    <div class="form-group">
+        <textarea class="form-control" placeholder="" rows="5">
+        </textarea>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+         <div class="col-md-3">
+             <label> Status <span>Temuan</span></label>
+             <select>
+                <option value="0"> Proses</option>
+                <option value="1"> Closed saat penutupan</option>
+                <option value="2"> Closed saat pembuatan laporan</option>
+                <option value="3"> Atensi Direktur Utama</option>
+                <option value="4"> Tuntas</option>
+
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <input type="file" name="file_1" class="file"/>
+        <button class="btn btn-danger pull-right">Send</button>
+    </div>
+
+    <div class="dev-email-message-attachment">
+        <strong>Kertas Kerja:</strong><br>
+        <a href="#">2016-J01-KK.01-Agus.doc</a>, <a href="#">Data Potensi</a>
+    </div>
+
+</div>
+<!-- panel -->
+</div>
+</div>
+<!-- ./ panel -->
+<!-- ./email message -->
+</div>
+<!-- ./email template -->                        
 
 </div>
 <!-- ./page content container -->
