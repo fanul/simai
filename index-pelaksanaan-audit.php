@@ -48,6 +48,7 @@
                                 <th>Icon</th>
                                 <th>Tahun</th>
                                 <th>Auditee</th>
+                                <th>Pelaporan</th>
                                 <th>Banyak PA</th>
                                 <th>Banyak Kesimpulan</th>
                                 <th>Banyak Temuan</th>
@@ -60,6 +61,7 @@
                                 <th></th>
                                 <th>2016</th>
                                 <th>Auditee</th>
+                                <th>Pelaporan</th>
                                 <th>Banyak PA</th>
                                 <th>Banyak Kesimpulan</th>
                                 <th>Banyak Temuan</th>
@@ -74,11 +76,19 @@
                                         <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="btn btn-primary tip" title="Isi Kesimpulan">Kesimpulan</a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <a href="index-pelaksanaan-audit-input-temuan.php" class="btn btn-primary tip" title="Isi temuan">Temuan</a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="index-pelaksanaan-audit-input-laporan.php" class="btn btn-danger tip" title="Isi Laporan">Laporan</a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="lha.pdf" class="btn btn-warning tip" title="Isi temuan">print</a>
                                     </div>
 
                                 </td>
                                 <td>2016</td>
                                 <td>Jakarta Kelapa Gading</td>
+                                <td>
+                                    <a href="index-pelaksanaan-audit-pelaporan.php" class=" tip" title="Pelaporan LHA"><i class="fa fa-check">&nbsp;&nbsp;</i>  1. LHA</a><br>
+                                    <a href="index-arsip-fisik.php" class=" tip" title="Pelaporan Arsip"><i class="fa fa-times">&nbsp;&nbsp;</i>  2. Arsip Fisik</a><br>
+                                </td>
                                 <td>15</td>
                                 <td>6</td>
                                 <td>7</td>
@@ -90,50 +100,66 @@
                                         <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="btn btn-primary tip" title="Isi Kesimpulan">Kesimpulan</a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <a href="index-pelaksanaan-audit-input-temuan.php" class="btn btn-primary tip" title="Isi temuan">Temuan</a>
-                                    </divx
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="index-pelaksanaan-audit-input-laporan.php" class="btn btn-danger tip" title="Isi Laporan">Laporan</a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="lha.pdf" class="btn btn-warning tip" title="Isi temuan">print</a>
+                                    </div>
                                 </td>
                                 <td>2016</td>
                                 <td>Medan</td>
-                                <td>15</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>30</td>
-                            </tr> 
-                            <tr>
                                 <td>
-                                    <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="btn btn-primary tip" title="Isi Kesimpulan">Kesimpulan</a>
+                                   <a href="index-pelaksanaan-audit-pelaporan.php" class=" tip" title="Pelaporan LHA"><i class="fa fa-times">&nbsp;&nbsp;</i>  1. LHA</a><br>
+                                   <a href="index-arsip-fisik.php" class=" tip" title="Pelaporan Arsip"><i class="fa fa-times">&nbsp;&nbsp;</i>  2. Arsip Fisik</a><br>
+                               </td>
+                               <td>15</td>
+                               <td>6</td>
+                               <td>7</td>
+                               <td>30</td>
+                           </tr> 
+                           <tr>
+                            <td>
+                                <div class="checkbox checkbox-inline">
+                                    <a href="index-pelaksanaan-audit-input-kesimpulan.php" class="btn btn-primary tip" title="Isi Kesimpulan">Kesimpulan</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="index-pelaksanaan-audit-input-temuan.php" class="btn btn-primary tip" title="Isi temuan">Temuan</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="index-pelaksanaan-audit-input-laporan.php" class="btn btn-danger tip" title="Isi Laporan">Laporan</a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="index-pelaksanaan-audit-input-temuan.php" class="btn btn-primary tip" title="Isi temuan">Temuan</a>
-                                    </div>
-                                </td>
-                                <td>2015</td>
-                                <td>Kediri</td>
-                                <td>15</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>30</td>                            
-                            </tr>
+                                    <a href="lha.pdf" class="btn btn-warning tip" title="Isi temuan">print</a>  
+                                </div>
+                            </td>
+                            <td>2015</td>
+                            <td>Kediri</td>
+                            <td>
+                               <a href="index-pelaksanaan-audit-pelaporan.php" class=" tip" title="Pelaporan LHA"><i class="fa fa-times">&nbsp;&nbsp;</i>  1. LHA</a><br>
+                               <a href="index-arsip-fisik.php" class=" tip" title="Pelaporan Arsip"><i class="fa fa-times">&nbsp;&nbsp;</i>  2. Arsip Fisik</a><br>
+                           </td>
+                           <td>15</td>
+                           <td>6</td>
+                           <td>7</td>
+                           <td>30</td>                            
+                       </tr>
 
-                        </tbody>
+                   </tbody>
 
 
 
-                    </table>
-                </div>
-                <!-- ./tabelnya -->
+               </table>
+           </div>
+           <!-- ./tabelnya -->
 
-            </div>                        
-            <!-- ./datatables plugin -->
+       </div>                        
+       <!-- ./datatables plugin -->
 
-            <!-- Copyright -->
-            <?php include "include-copyright.php" ?>
-            <!-- ./Copyright -->
+       <!-- Copyright -->
+       <?php include "include-copyright.php" ?>
+       <!-- ./Copyright -->
 
-        </div>
+   </div>
 
-    </div>
-    <!-- ./page content container -->
+</div>
+<!-- ./page content container -->
 
 </div>
 

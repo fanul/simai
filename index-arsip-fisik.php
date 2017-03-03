@@ -99,7 +99,7 @@
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-arsip-fisik-input.php" class="fa fa-share-square-o tip" title="Isi Kesimpulan"></a>
+                                        <a href="index-arsip-fisik-input.php" class="btn btn-primary" title="Isi Kesimpulan">Proses</a>
                                     </div>
                                 </td>
                                
@@ -129,7 +129,7 @@
                              <tr>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-arsip-fisik-input.php" class="fa fa-share-square-o tip" title="Isi Kesimpulan"></a>
+                                        <a href="index-arsip-fisik-input.php" class="btn btn-primary" title="Isi Kesimpulan">Proses</a>
                                     </div>
                                 </td>
                                

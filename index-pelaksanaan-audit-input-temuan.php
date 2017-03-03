@@ -21,6 +21,12 @@
                             <a href="#" class="btn btn-success btn-block">
                                 <span> 2016 <br>Jakarta Kelapa Gading</span>
                             </a>
+
+
+                              <a class="btn btn-success btn-block" style="background-color: red" data-toggle="modal" data-target="#modal_approve_closing"><span>Closing Audit</span></a>
+
+                              <a class="btn btn-success btn-block" style="background-color: blue" data-toggle="modal" data-target="#modal_approve_finish"><span>Approve Closing</span></a>
+
                         </div>
 
                         <div class="dev-email-navigation-labels">
@@ -130,8 +136,8 @@
 
                 <div class="dev-email-message-panel">
                     <div class="btn-group">
-                        <button class="btn btn-default"><i class="fa fa-warning"> &nbsp; Reset</i></button>
-                        <button class="btn btn-default"><i class="fa fa-prints"> &nbsp; Print</i></button>
+                        <button class="btn btn-default" data-toogle="modal" data-target="#modal_review_pelaksanaan"><i class="fa fa-warning"> &nbsp; Feedback</i></button>
+                        <a class="btn btn-default" href="lha.pdf"><i class="fa fa-prints"> &nbsp; Print</i></a>
                     </div>
                 </div>
 
@@ -160,19 +166,6 @@
                         </ul>
                     </div>                                                                              
                     <div class="panel-body">
-                        <!-- 
-                        <div class="dev-email-message-title">
-                            <hr>
-                            <span>
-                                <label class="switch">
-                                    Belum Tuntas
-                                    <input type="checkbox" name="switch_1" value="0"/>
-                                    <span></span>
-                                    Tuntas
-                                </label>
-                            </span>
-                        </div>
-                    -->
                     <!-- aksi -->
                     <div class="dev-email-message-form">
                             <!-- tab temuan
@@ -267,21 +260,21 @@
     -->
 
 
-    <div class="form-group">
-        <button class="btn btn-danger pull-right">Isi</button>
-    </div>
-
 </div>
 
 <!-- modal -->
-    <?php include "index-pelaksanaan-audit-approve.php" ?>
+                <?php include "index-pelaksanaan-audit-approve.php" ?>
+                <?php include "index-pelaksanaan-audit-review.php" ?>
+            <?php include "index-pelaksanaan-audit-closing.php" ?>
+            <?php include "index-pelaksanaan-audit-finish.php" ?>
 <!-- ./modal -->
 
 <!-- ./email message -->
-<?php include "include-copyright.php" ?>
+
 </div>
 <!-- ./email template -->                        
-
+</div>
+<?php include "include-copyright.php" ?>
 </div>
 <!-- ./page content container -->
 

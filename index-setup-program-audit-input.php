@@ -156,6 +156,17 @@
                                                 </div>
                                             </div>
 
+
+
+                                        <div class="row">
+                                            <div class="col-md-12">                        
+                                                <div class="form-group form-group-custom">
+                                                    <label>Isi Nilai Bobot</label>
+                                                    <input type="text" class="form-control" placeholder="isi Nilai">
+                                                </div>                        
+                                            </div>
+                                        </div>
+
                                             <div class="row">
                                                 <div class="col-md-12">                        
                                                     <div class="form-group form-group-custom">
@@ -176,11 +187,6 @@
                                             <option value="3">Keuangan</option>
                                             <option value="4">SDM/Umum</option>
                                         </select>
-
-                                        <br><br>
-
-                                        <label>Isi Nilai Bobot</label>
-                                        <input type="text" class="form-control">
                                         <br><br>
 
                                         <div class="form-group-one-unit">

@@ -190,8 +190,13 @@
         <script type="text/javascript" src="js/plugins/datatables/my-dataTables.min.js"></script>
         <script type="text/javascript" src="js/plugins/sortable/sortable.min.js"></script>
         <script type="text/javascript" src="js/plugins/summernote/summernote.min.js"></script>
+        
+        <script type="text/javascript" src="js/plugins/summernote/summernote-ext-print.js"></script>
+
         <script type="text/javascript" src="js/plugins/tags-input/jquery.tagsinput.min.js"></script>
         <script type="text/javascript" src="js/plugins/jstree/jstree.min.js"></script>
+        <script type="text/javascript" src="js/plugins/canvasjs/canvasjs.min.js"></script>
+
         
         <script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js"></script>
         
@@ -218,6 +223,34 @@
            
            $(window).load(function(){
             $('.dev-email-message').hide();
+            $('.sembunyi').hide();
+
+            /** tes **/
+
+                var chartxx = new CanvasJS.Chart("chartContainer",
+            {
+                title:{
+                    text: "Banyak Temuan 2016"
+                },
+
+                data: [
+                {
+                    type: "bar",
+
+                    dataPoints: [
+                    { x: 1, y: 90, label:"908 - Kanwil Sulawesi" },
+                    { x: 2, y: 70, label:"903 - Kanwil Jakarta" },
+                    { x: 3, y: 50, label:"902 - Kanwil Jatim" },
+  
+                    ]
+                }
+                ]
+            });
+
+            chartxx.render();
+
+            /** ./tes **/
+
         });
         
 

@@ -87,61 +87,99 @@
                                         </div>
 
                                         <div class="row">
-                                            <label class="col-md-2 control-label"> Status <span>Temuan</span></label>
+                                            <div class="form-group">
+                                            <label class="col-md-2 control-label"> Klasifikasi <span>Temuan</span></label>
+                                                <div class="col-md-3">
+                                                   <select class="form-control selectpicker">
+                                                    <option value="0"> Strategis</option>
+                                                    <option value="1"> Administratif</option>
+                                                    <option value="2"> Pendukung</option>
+
+                                                </select>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                      <div class="row">
+                                        <div class="form-group">
+                                             <label class="col-md-2 control-label"> Level <span>Temuan</span></label>
                                             <div class="col-md-3">
-                                               <select>
+                                               <select class="form-control selectpicker">
+                                                    <option value="0"> Major</option>
+                                                    <option value="1"> Medium</option>
+                                                    <option value="2"> Minor</option>
+                                                </select>
+                                            </div>
+
+                                             <label class="col-md-2 control-label" > Referensi <span>Temuan</span></label>
+                                             <div class="col-md-3">
+                                               <select class="form-control selectpicker" data-live-search="true">
+                                                    <option value="0">2016-908-Kanwil Sulawesi-PA.001-TEM.002</option>
+                                                    <option value="1">2016-903-Kanwil DKI Jakarta-PA.001-TEM.002</option>
+                                                    <option value="2">2016-T02-Gorontalo-PA.001-TEM.002</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group">
+                                        <label class="col-md-2 control-label"> Status <span>Temuan</span></label>
+                                            <div class="col-md-3">
+                                               <select class="form-control selectpicker">
                                                 <option value="0"> Proses</option>
                                                 <option value="1"> Closed saat penutupan</option>
                                                 <option value="2"> Closed saat pembuatan laporan</option>
                                                 <option value="3"> Atensi Direktur Utama</option>
                                                 <option value="4"> Tuntas</option>
-
                                             </select>
                                         </div>
                                     </div>
-
-                                    <br><br>
-
-
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label"> Unit <span>Penanggung Jawab</span></label>
-                                        <div class="col-md-3">
-                                            <select class="form-control selectpicker" data-live-search="true">
-                                                <option value="1">908 - Kanwil Sulawesi Maluku</option>
-                                                <option value="2">T00 - Manado</option>
-                                                <option valuce="3">J02 - Jakarta Grogol</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <button type="button" class="btn btn-primary">+ Penanggung Jawab</button> 
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label">&nbsp;</label>  
-                                        <div class="col-md-8">                              
-                                            <input type="text" class="tags" value="908 - Kanwil Jakarta, 42A - Divisi Akuntansi"/>
-                                        </div>
-                                    </div>
-
                                 </div>
 
-                                <div id="temuan-2">
+                                <br><br>
 
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label">Kondisi</label>
-                                        <div class="col-md-8">
-                                            <textarea class="form-control" placeholder="Belum Ada Kondisi"></textarea>
-                                        </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label"> Unit <span>Penanggung Jawab</span></label>
+                                    <div class="col-md-3">
+                                        <select class="form-control selectpicker" data-live-search="true">
+                                            <option value="1">908 - Kanwil Sulawesi Maluku</option>
+                                            <option value="2">T00 - Manado</option>
+                                            <option valuce="3">J02 - Jakarta Grogol</option>
+                                        </select>
                                     </div>
-
+                                    <div class="col-md-3">
+                                        <button type="button" class="btn btn-primary">+ Penanggung Jawab</button> 
+                                    </div>
                                 </div>
 
-                                <div id="temuan-3">
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">&nbsp;</label>  
+                                    <div class="col-md-8">                              
+                                        <input type="text" class="tags" value="908 - Kanwil Jakarta, 42A - Divisi Akuntansi"/>
+                                    </div>
+                                </div>
 
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label">Isi <span>Kriteria</span></label>
-                                        <div class="col-md-8">
+                            </div>
+
+                            <div id="temuan-2">
+
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">Kondisi</label>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" placeholder="Belum Ada Kondisi"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="temuan-3">
+
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">Isi <span>Kriteria</span></label>
+                                    <div class="col-md-8">
                                <!--
                                 <select class="form-control selectpicker" data-live-search="true">
                                     <option value="1">Human error</option>
@@ -176,7 +214,7 @@
                             </select>
                             <br><br>
                             <br><br>
-                            <label>Pilih Pihak Penanggung jawab</label>
+                            <label>Pihak Penyebab</label>
                             <br>
                             <select class="form-control selectpicker" data-live-search="true">
                                 <option value="1">Semua Pihak</option>
@@ -184,7 +222,7 @@
                                 <option value="2">45A - Divisi Keuangan</option>
                             </select>
                             <br><br>
-                            <textarea class="summernote" rows="1"></textarea>   
+                            <textarea id="summernote" rows="1"></textarea>   
                             <button type="button" class="btn btn-primary">+ Sebab</button>    
                             <br><br>                     
                             <?php include "index-pelaksanaan-audit-table-akibat.php" ?>
@@ -205,7 +243,7 @@
                             </select>
                             <br><br>
                             <br><br>
-                            <label>Pilih Pihak Penanggung jawab</label>
+                            <label>Pihak </label>
                             <br>
                             <select class="form-control selectpicker" data-live-search="true">
                                 <option value="1">Semua Pihak</option>
@@ -221,6 +259,21 @@
                                 <div class="col-md-6">
                                     <label>Nilai Dampak</label>
                                     <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Pilih Jenis nilai</label>
+                                    <select class="form-control selectpicker" data-live-search="true">
+                                        <option value="1">% - Persentase</option>
+                                        <option value="2">Rp - Rupiah</option>
+                                        <option value="3">Satuan</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Isi Nilai</label>
+                                    <input type="text" class="form-control" placeholder="Belum Ada Nilai">
                                 </div>
                             </div>
                             <br><br>
@@ -275,6 +328,13 @@
                         <label class="col-md-2 control-label">Isi <span>Opini Awal</span></label>
                         <div class="col-md-8">                        
                             <textarea class="form-control" placeholder="Belum Ada Opini"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <label class="col-md-2 control-label">Isi <span>Kriteria Keberhasilan</span></label>
+                        <div class="col-md-8">                        
+                            <textarea class="form-control" placeholder="Belum ada Kriteria  "></textarea>
                         </div>
                     </div>
                     <div class="form-group">

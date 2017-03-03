@@ -34,15 +34,18 @@
                 <ul>
                     <li>
 
-                    <li><a href="index-setup-proses.php">Program Audit</a></li>
-                     <li><a href="index-setup-profile.php">Profile</a></li>
-                     <li><a href="index-setup-klasifikasi.php">Klasifikasi</a></li>
-                     <li><a href="index-setup-hak.php">Hak Akses</a></li>    
-                     <li><a href="#">Indeks Matrix</a></li>       
+                        <li><a href="index-setup-proses.php">Program Audit</a></li>
+                        <li><a href="index-setup-profile.php">Profile</a></li>
+                        <li><a href="index-setup-klasifikasi.php">Klasifikasi</a></li>
+                        <li><a href="index-setup-hak.php">Hak Akses</a></li>
+                        <li><a href="index-setup-sla.php">Nilai Konstanta</a></li>    
+
+                        <!-- <li><a href="#">Indeks Matrix</a></li> -->       
                     </ul>
                 </li>
             </li>
-            
+
+
             <li>
                 <a href="#"><i class="fa fa-file-o"></i> <span></span>Perencanaan Audit</a>
                 <ul>
@@ -52,66 +55,80 @@
                      <li><a href="index-setup-scoring-audit.php">Scoring Audit Universe</a></li>   
                      <li><a href="index-perencanaan-PKAT.php">PKAT</a></li>                       
 
-                    </ul>
-                </li>
-            </li>
+                 </ul>
+             </li>
+         </li>
 
 
-            <li>
-                <a href="#"><i class="fa fa-file-o"></i> <span>Persiapan Audit</span></a>
-                <ul>
+         <li>
+            <a href="#"><i class="fa fa-file-o"></i> <span>Persiapan Audit</span></a>
+            <ul>
+                <li>
                     <li>
-                        <li>
-                            <!-- <a href="index-perencanaan-audit.php">Indeks Perencanaan Audit</a> -->
-                            <div id="gallery">
-                                <span><a href="persiapan1.jpg" class="gallery-item">Perencanaan Audit Screen 1</a></span>
-                            </div>
-                        </li>
+                        <a href="index-persiapan-audit.php">Persiapan Audit</a>
+                        <div id="gallery">
+                            <span><a href="persiapan1.jpg" class="gallery-item">Gambar Persiapan Audit Screen 1</a></span>
+                        </div>
+                    </li>
 
-                        <li>
-                            <!-- <a href="index-perencanaan-audit.php">Indeks Perencanaan Audit</a> -->
-                            <div id="gallery">
-                                <span><a href="persiapan2.jpg" class="gallery-item">Perencanaan Audit Screen 2</a></span>
-                            </div>
-                        </li>
-
-                    </ul>
-                </li>
-            </li>
-
-
-            <li>
-                <a href="index-pelaksanaan-audit.php"><i class="fa fa-file-o"></i> <span>Pelaksanaan Audit</span></a>
-            </li>
-
-            
-            <li>
-                <a href="index-tindak-lanjut.php"><i class="fa fa-file-o"></i> <span>Tindak Lanjut Audit</span></a>
-            </li>
-
-            <li>
-                <a href="index-pelaksanaan-auditfraud.php"><i class="fa fa-file-o"></i> <span>Audit TKK</span></a>
-            </li>
-
-            <li>
-                <a href="index-arsip-fisik.php"><i class="fa fa-file-o"></i> <span>Arsip Fisik</span></a>
-            </li>
-
-
-                        <li>
-                <a href="#"><i class="fa fa-file-o"></i> <span>Analisa Audit</span></a>
-                <ul>
                     <li>
+                        <!-- <a href="index-perencanaan-audit.php">Indeks Perencanaan Audit</a> -->
+                        <div id="gallery">
+                            <span><a href="persiapan2.jpg" class="gallery-item">Gambar Persiapan Audit Screen 2</a></span>
+                        </div>
+                    </li>
+                </li>
+            </ul>
+        </li>
+
+
+        <li>
+            <a href="index-pelaksanaan-audit.php"><i class="fa fa-file-o"></i> <span>Pelaksanaan Audit</span></a>
+        </li>
+
+
+        <li>
+            <a href="index-tindak-lanjut.php"><i class="fa fa-file-o"></i> <span>Tindak Lanjut Audit</span></a>
+        </li>
+
+        <li>
+            <a href="index-pelaksanaan-auditfraud.php"><i class="fa fa-file-o"></i> <span>Audit TKK 0</span></a>
+        </li>
+
+        <li>
+        <a href="#"><i class="fa fa-file-o"></i> <span>Audit TKK</span></a>
+            <ul>
+                <li>
+                <!--
+                    <li><a href="index-fraud-perencanaan.php">Perencanaan Investigasi</a></li>
+                    <li><a href="index-fraud-pelaksanaan.php">Pelaksanaan Investigasi</a></li>
+                -->
+                    <li><a href="index-fraud-input.php">Input Database Fraud</a></li>   
+                    <li><a href="index-fraud-database.php">Lihat Database Fraud</a></li>   
+                    <!-- <li><a href="#">Indeks Matrix</a></li> -->       
+                </ul>
+            </li>
+        </li>
+
+        <li>
+            <a href="index-arsip-fisik.php"><i class="fa fa-file-o"></i> <span>Arsip Fisik</span></a>
+        </li>
+
+
+        <li>
+            <a href="#"><i class="fa fa-file-o"></i> <span>Analisa Audit</span></a>
+            <ul>
+                <li>
 
                     <li><a href="analisa-temuan.php">Analisa Temuan</a></li>
-                     <li><a href="#">Analisa KK</a></li>
-                                                      
-                    </ul>
-                </li>
+                    <li><a href="#">Analisa KK</a></li>
+
+                </ul>
             </li>
+        </li>
 
-            <!-- ./contoh menu -->        
+        <!-- ./contoh menu -->        
 
-        </ul>
-    </div>
+    </ul>
+</div>
     <!-- ./page sidebar -->

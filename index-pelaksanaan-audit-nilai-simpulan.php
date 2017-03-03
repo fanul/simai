@@ -5,8 +5,10 @@
     <table class="table">
         <thead>
             <tr>
-            <th>Nilai</th>
-                <th>Aspek Penilaian Simpulan</th>
+            <th>Governance</th>
+            <th>Control</th>
+            <th>Risiko</th>
+            <th>Aspek Penilaian Simpulan</th>
             </tr>
         </thead> 
 
@@ -14,6 +16,26 @@
 
             <tr>
                 <td>
+                     <select>
+                        <option value="0"> 0</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+            </td>
+             <td>
+                     <select>
+                        <option value="0"> 0</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+            </td>
+             <td>
                      <select>
                         <option value="0"> 0</option>
                         <option value="1"> 1</option>
@@ -37,11 +59,51 @@
                         <option value="5"> 5</option>
                     </select>
             </td>
+             <td>
+                     <select>
+                        <option value="0"> 0</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+            </td>
+             <td>
+                     <select>
+                        <option value="0"> 0</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+            </td>
             <td>Kesesuaian Data Potensi dengan Potensi Riil</td>
         </tr>
 
         <tr>
             <td>
+                <select>
+                        <option value="0"> 0</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+            </td>
+                        <td>
+                <select>
+                        <option value="0"> 0</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+            </td>
+                        <td>
                 <select>
                         <option value="0"> 0</option>
                         <option value="1"> 1</option>
@@ -65,12 +127,52 @@
                         <option value="5"> 5</option>
                     </select>
             </td>
+                        <td>
+                <select>
+                        <option value="0"> 0</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+            </td>
+                        <td>
+                <select>
+                        <option value="0"> 0</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+            </td>
             <td>Nilai Manfaat data potensi, waktu dan kelengkapan</td>
         </tr>
 
         <tr>
             <td>
                 <select>
+                        <option value="0"> 0</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+            </td>
+             <td>
+                     <select>
+                        <option value="0"> 0</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+            </td>
+             <td>
+                     <select>
                         <option value="0"> 0</option>
                         <option value="1"> 1</option>
                         <option value="2"> 2</option>

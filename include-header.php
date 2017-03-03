@@ -13,6 +13,8 @@
     
     <!-- css styles -->
     <link rel="stylesheet" type="text/css" href="css/blue-white.css" id="dev-css">
+    <!-- <link rel="stylesheet" type="text/css" href="js/plugins/summernote/summernote.css"> -->
+
     <!-- ./css styles -->                                     
     
         <!--[if lte IE 9]>

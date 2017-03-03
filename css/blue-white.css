@@ -15685,6 +15685,20 @@ table[data-sortable] tr.row_selected {
 }
 **/
 
+.table > tbody > tr.row_selected{ 
+    background-color: #B0BED9;;
+}
+
+.table > tbody > tr td.details-control{ 
+    background: url('datatables/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+.table > tbody > tr.shown td.details-control{
+    background: url('datatables/details_close.png') no-repeat center center;
+    cursor: pointer;
+}
+
 /* ./third-party plugins */
 /* features */
 .dev-page.dev-page-login {

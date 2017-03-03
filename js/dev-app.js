@@ -369,7 +369,45 @@ var dev_forms = {
         
         /* summernote */
         if($(".summernote").length > 0)
-            $(".summernote").summernote({'width': '100%', 'height': '300px'});
+        {
+            $(".summernote").summernote({
+                'width': '100%', 
+                'height': '200px',
+                toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'italic', 'underline', 'clear']],
+                ['fontname', ['fontname']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'hr']],
+                ['view', ['fullscreen', 'codeview']],
+                ['misc', ['print']]
+                ],
+            });
+        }
+
+        if($("#summernote").length > 0)
+        {
+            $("#summernote").summernote({
+                'width': '100%', 
+                'height': '200px',
+                toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'italic', 'underline', 'clear']],
+                ['fontname', ['fontname']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'hr']],
+                ['misc', ['print']],
+                ['help', ['help']],
+                
+                ],
+            });
+        }
         /* ./summernote */            
         
         /* popover */
@@ -625,149 +663,206 @@ var datatables = {
                         }
                     } );
                 });
-                    /* ./tambahan */
-            }
 
             }
+
+            function formatx () {
+                // `d` is the original data object for the row
+                return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+                '<tr>'+
+                '<td>Nama Pelaku:</td>'+
+                '<td>'+'Jessica' +'</td>'+
+                '<td>'+'<img src="img/mockup/jessica.jpg" style="width:100px;height:100px;">' +'</td>'+
+                '<td><table border="0" cellspacing="0" cellpadding="5">'+
+                '<tr>'+
+                '<td>'+ 'jenis kelamin: perempuan' +'</td>'+
+                '<td>'+ 'jabatan: Kepala Bidang Pemasaran' +'</td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>'+ 'Keterlibatan: Pelaku Utama' +'</td>'+
+                '<td>'+ 'BA kesepakatan TL/SKTM: AB-2015, Tanggal 02-10-2015' +'</td>'+
+                '</tr>'+
+                '</tr></table></td>'+
+                '</tr>'+
+                '<tr>'+
+                '<td>Total Kerugian:</td>'+
+                '<td>'+ '100.000.000' +'</td>'+
+                '<td>'+ 'Yang Telah Dikembalikan: ' +'</td>'+
+                '<td>'+ '50.000.000' +'</td>'+
+
+                '</tr>'+
+                '<tr>'+
+                '<td>Additional:</td>'+
+                '<td>Info Lain Masuk Sini...</td>'+
+                '</tr>'+
+                '</table>';
+            }            
+
+            function loadTable(){
+                return $.get('index-fraud-database-detail.php');
+                //s.load('index-fraud-database-detail.php');
+            }
+
+            $('.table-sortable').on('click', 'td.details-control', function () {
+
+
+                var tr = $(this).closest('tr');
+                var row = myTab.row( tr );
+
+                if ( row.child.isShown() ) {
+                    // This row is already open - close it
+                    row.child.hide();
+                    tr.removeClass('shown');
+                }
+                else {
+                    // Open this row
+                    row.child(formatx()).show();
+                    tr.addClass('shown');
+                }
+            } );
+
+            /*./ tambahanQ */
 
         }
-    };
 
-    var dev_accordion = {
-        init: function(){
+    }
+};
 
-            $(".accordion .panel-title > a").on("click",function(){
+var dev_accordion = {
+    init: function(){
 
-                var accordion   = $(this).parents(".accordion");
-                var noCollapse  = accordion.hasClass("accordion-dc");
+        $(".accordion .panel-title > a").on("click",function(){
 
-                var panel       = $(this).parents(".panel");
-                var pbody       = $($(this).attr("href"));
+            var accordion   = $(this).parents(".accordion");
+            var noCollapse  = accordion.hasClass("accordion-dc");
 
-                if(pbody.length > 0){
+            var panel       = $(this).parents(".panel");
+            var pbody       = $($(this).attr("href"));
 
-                    if(panel.hasClass("panel-opened")){
+            if(pbody.length > 0){
 
-                        pbody.slideUp(200,function(){
-                            panel.removeClass("panel-opened");
-                        });
+                if(panel.hasClass("panel-opened")){
 
-                    }else{
+                    pbody.slideUp(200,function(){
+                        panel.removeClass("panel-opened");
+                    });
 
-                        pbody.slideDown(200,function(){
-                            panel.addClass("panel-opened");
-                        });
+                }else{
 
-                    }
+                    pbody.slideDown(200,function(){
+                        panel.addClass("panel-opened");
+                    });
 
-                    if(!noCollapse){
-                        accordion.find(".panel").not(panel).find(".panel-body").slideUp(200,function(){
-                            $(this).parents(".panel").removeClass("panel-opened");                        
-                        });                                           
-                    }
-
-                    setTimeout(function(){
-                        dev_layout_alpha_content.init(dev_layout_alpha_settings);
-                    },500);                
-                    return false;
                 }
 
-            });                
-
-        }
-    };
-
-    var widget_tabbed = {
-        init: function(){
-
-            $(".widget-tabbed").each(function(){
-
-                var widget = $(this);
-                var active = widget.find(".widget-tabs > li.active > a").attr("href");
-
-                widget.find(".widget-tab").removeClass("active");
-                $(active).addClass("active");
+                if(!noCollapse){
+                    accordion.find(".panel").not(panel).find(".panel-body").slideUp(200,function(){
+                        $(this).parents(".panel").removeClass("panel-opened");                        
+                    });                                           
+                }
 
                 setTimeout(function(){
                     dev_layout_alpha_content.init(dev_layout_alpha_settings);
-                },200);            
-
-                $(this).find(".widget-tabs li a").click(function(){
-                    widget.find(".widget-tab").removeClass("active");
-                    widget.find(".widget-tabs li.active").removeClass("active");
-
-                    $($(this).attr("href")).addClass("active");
-                    $(this).parents(".widget-tabs").find("li").removeClass("active");
-                    $(this).parent("li").addClass("active");
-
-                    setTimeout(function(){
-                        dev_layout_alpha_content.init(dev_layout_alpha_settings);
-                    },200);
-
-                    return false;
-                });
-
-            });        
-        }
-    };
-
-    var list_tasks = {
-        init: function(){
-
-            $(".list-tasks .list-tasks-item").on("click",function(){
-
-                if($(this).find(".checkbox > input").prop("checked")){
-                    $(this).removeClass("active");
-                    $(this).find(".checkbox > input").prop("checked",false);
-                }else{
-                    $(this).addClass("active");
-                    $(this).find(".checkbox > input").prop("checked",true);
-                }
-
-            });
-
-        }
-    }
-
-    var tabs = {
-        init: function(){
-            $('a[data-toggle="tab"]').on('shown.bs.tab', function () {
-                dev_layout_alpha_content.init(dev_layout_alpha_settings);
-            });
-        }
-    };
-
-    var knob = {
-        init: function(){
-            if($(".knob").length > 0)
-                $(".knob").knob();        
-        }
-    };
-
-    var scroll = {    
-        init: function(){        
-            if($(".scroll").length > 0){
-                $(".scroll").mCustomScrollbar({axis:"y", autoHideScrollbar: true, scrollInertia: 200, advanced: {autoScrollOnFocus: false}});
+                },500);                
+                return false;
             }
-        }    
-    };
 
-    $(function(){    
-        dev_custom.init();
-        dev_navigation.init();    
-        dev_header.init();    
-        dev_tables.init();
-        counter.init();
-        knob.init();
-        smartWizard.init();
-        dev_forms.init();
-        dev_accordion.init();
-        tabs.init();
-        datatables.init();    
-        scroll.init();
-        dev_panels.init();
-        dev_login.init();
-        charts.init();
-        widget_tabbed.init();
-        list_tasks.init();
-    });
+        });                
+
+    }
+};
+
+var widget_tabbed = {
+    init: function(){
+
+        $(".widget-tabbed").each(function(){
+
+            var widget = $(this);
+            var active = widget.find(".widget-tabs > li.active > a").attr("href");
+
+            widget.find(".widget-tab").removeClass("active");
+            $(active).addClass("active");
+
+            setTimeout(function(){
+                dev_layout_alpha_content.init(dev_layout_alpha_settings);
+            },200);            
+
+            $(this).find(".widget-tabs li a").click(function(){
+                widget.find(".widget-tab").removeClass("active");
+                widget.find(".widget-tabs li.active").removeClass("active");
+
+                $($(this).attr("href")).addClass("active");
+                $(this).parents(".widget-tabs").find("li").removeClass("active");
+                $(this).parent("li").addClass("active");
+
+                setTimeout(function(){
+                    dev_layout_alpha_content.init(dev_layout_alpha_settings);
+                },200);
+
+                return false;
+            });
+
+        });        
+    }
+};
+
+var list_tasks = {
+    init: function(){
+
+        $(".list-tasks .list-tasks-item").on("click",function(){
+
+            if($(this).find(".checkbox > input").prop("checked")){
+                $(this).removeClass("active");
+                $(this).find(".checkbox > input").prop("checked",false);
+            }else{
+                $(this).addClass("active");
+                $(this).find(".checkbox > input").prop("checked",true);
+            }
+
+        });
+
+    }
+}
+
+var tabs = {
+    init: function(){
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function () {
+            dev_layout_alpha_content.init(dev_layout_alpha_settings);
+        });
+    }
+};
+
+var knob = {
+    init: function(){
+        if($(".knob").length > 0)
+            $(".knob").knob();        
+    }
+};
+
+var scroll = {    
+    init: function(){        
+        if($(".scroll").length > 0){
+            $(".scroll").mCustomScrollbar({axis:"y", autoHideScrollbar: true, scrollInertia: 200, advanced: {autoScrollOnFocus: false}});
+        }
+    }    
+};
+
+$(function(){    
+    dev_custom.init();
+    dev_navigation.init();    
+    dev_header.init();    
+    dev_tables.init();
+    counter.init();
+    knob.init();
+    smartWizard.init();
+    dev_forms.init();
+    dev_accordion.init();
+    tabs.init();
+    datatables.init();    
+    scroll.init();
+    dev_panels.init();
+    dev_login.init();
+    charts.init();
+    widget_tabbed.init();
+    list_tasks.init();
+});

@@ -34,7 +34,7 @@
             <!-- panel tree -->
             <div class="panel panel-default panel-collapsed">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Reporting Engine</h3>
+                    <h3 class="panel-title">Pembuatan Laporan</h3>
                     <ul class="panel-btn">
                         <li><a href="#" class="btn btn-danger" onClick="dev_panel_fullscreen($(this).parents('.panel')); return false;"><i class="fa fa-compress"></i></a></li>
                         <li>
@@ -99,7 +99,7 @@
                                 </select>
                             </div>
                         </form>
-                        <button class="btn btn-primary">Generate Report</button><br>
+                        <a class="btn btn-primary" href="img/mockup/lap_tindak_lanjut.png">Generate Report</a><br>
                     </div>
 
                     <div class="col-md-3">

@@ -21,7 +21,16 @@
                             <a href="#" class="btn btn-success btn-block">
                                 <span> 2016 <br>Jakarta Kelapa Gading</span>
                             </a>
+
+                            <a class="btn btn-success btn-block" style="background-color: red" data-toggle="modal" data-target="#modal_approve_closing"><span>Closing Audit</span></a>
+
+                            <a class="btn btn-success btn-block" style="background-color: blue" data-toggle="modal" data-target="#modal_approve_finish"><span>Approve Closing</span></a>
+
                         </div>
+
+
+
+
 
                         <div class="dev-email-navigation-labels">
                             <ul>
@@ -56,7 +65,7 @@
                             </div>
                             <div class="btn-group pull-right">
                                 <button class="btn btn-default" data-toggle="modal" data-target="#modal_approve_pelaksanaan"><i class="fa fa-check-square">&nbsp; Approve</i></button>
-                                <button class="btn btn-default" data-toggle="modal" data-target="#modal_approve_pelaksanaan"><i class="fa fa-check-square">&nbsp; Review</i></button>                                        
+                                <button class="btn btn-default" data-toggle="modal" data-target="#modal_review_pelaksanaan"><i class="fa fa-text-height">&nbsp; Review</i></button>                                        
                             </div>
                         </div>
 
@@ -98,7 +107,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="dev-email-messages-list-item active">
                             <div class="dev-email-messages-list-item-toolbar">
                                 <div class="checkbox">
@@ -110,28 +118,28 @@
                                 </div>                                            
                             </div>
                             <div class="dev-email-messages-list-item-info">
-                             <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 3) </div>
-                             <div class="time">KKA.01</div> 
-                             <div class="message">
+                               <div class="name">PA.01 - Perluasan Kepesertaan <br> (opsi tampilan 3) </div>
+                               <div class="time">KKA.01</div> 
+                               <div class="message">
 
-                            </div>
-                        </div>
-                    </div>
+                               </div>
+                           </div>
+                       </div>
 
 
 
-                </div>
+                   </div>
 
-            </div>
-            <!-- ./list of messages -->
+               </div>
+               <!-- ./list of messages -->
 
-            <!-- email message -->
-            <div class="dev-email-message">
+               <!-- email message -->
+               <div class="dev-email-message">
 
                 <div class="dev-email-message-panel">
                     <div class="btn-group">
-                        <button class="btn btn-default"><i class="fa fa-warning"> &nbsp; Reset</i></button>
-                        <button class="btn btn-default"><i class="fa fa-prints"> &nbsp; Print</i></button>
+                        <button class="btn btn-default" data-toggle="modal" data-target="#modal_review_pelaksanaan"><i class="fa fa-text-height"> &nbsp; Feedback</i></button>
+                        <a class="btn btn-default" href="kka.pdf"><i class="fa fa-prints"> &nbsp; Print</i></a>
                     </div>
                 </div>
                 
@@ -154,73 +162,169 @@
                     </div>                                                                              
                     <div class="panel-body">
 
-                        <!-- <div class="dev-email-message-title"></div> -->
-                        <div class="dev-email-message-from">
-                            <img src="assets/images/users/user_1.jpg"> Agus                                    
-                        </div>
-                        <div class="dev-email-message-date">
-                            17:55, 02 Oktober 2016
-                        </div>
+                        <!-- START ACCORDION -->
+                        <div class="panel-group accordion">
 
-                        <div class="dev-email-message-form">
-                            <div class="form-group">
-                                <label> Hasil Desk-Audit :</label>
-                                <textarea class="form-control" placeholder="Post a quick reply" rows="5">
-                                    Dari Januari 2015 - Agustus 2016, diketahui bahwa kantor cabang tidak dapat melakukan pencatatan dengan baik. terdapat 1500 potensi yang tidak dilakukan penanggulangan dengan baik
-                                </textarea>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#acc01">
+                                            Kertas Kerja
+                                        </a>
+                                    </h4>
+                                </div>                                
+                                <div class="panel-body" id="acc01">
+                                    <!-- <div class="dev-email-message-title"></div> -->
+                                    <div class="dev-email-message-from">
+                                        <img src="assets/images/users/andre.png"> Andre Taulany                             
+                                    </div>
+                                    <div class="dev-email-message-date">
+                                        17:55, 02 Oktober 2016
+                                    </div>
+
+                                    <div class="dev-email-message-form">
+                                        <div class="form-group">
+                                            <label> Hasil Desk-Audit :</label>
+                                            <textarea class="form-control" placeholder="Post a quick reply" rows="5">
+                                                Dari Januari 2015 - Agustus 2016, diketahui bahwa kantor cabang tidak dapat melakukan pencatatan dengan baik. terdapat 1500 potensi yang tidak dilakukan penanggulangan dengan baik
+                                            </textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="file" name="file_1" class="file"/>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label> Hasil Field-Work :</label>
+                                            <textarea class="form-control" placeholder="Post a quick reply" rows="5">
+                                                Dari Januari 2015 - Agustus 2016, diketahui bahwa kantor cabang tidak dapat melakukan pencatatan dengan baik. terdapat 1500 potensi yang tidak dilakukan penanggulangan dengan baik
+                                            </textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="file" name="file_1" class="file"/>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="form-group-one-unit">
+                                        <div class="row">
+                                            <div class="col-md-12">                        
+
+                                                <?php include "index-pelaksanaan-audit-nilai-simpulan.php" ?>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <button class="btn btn-danger pull-right">Isi</button>
+                                    </div>
+                                </div>                                
                             </div>
-                            <div class="form-group">
-                                <input type="file" name="file_1" class="file"/>
-                            </div>
 
-
-                            <div class="form-group">
-                                <label> Hasil Field-Work :</label>
-                                <textarea class="form-control" placeholder="Post a quick reply" rows="5">
-                                    Dari Januari 2015 - Agustus 2016, diketahui bahwa kantor cabang tidak dapat melakukan pencatatan dengan baik. terdapat 1500 potensi yang tidak dilakukan penanggulangan dengan baik
-                                </textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="file" name="file_1" class="file"/>
-                            </div>
-
-                        </div>
-
-
-
-
-                        <div class="form-group-one-unit">
-                            <div class="row">
-                                <div class="col-md-12">                        
-
-                                    <?php include "index-pelaksanaan-audit-nilai-simpulan.php" ?>
-                                    
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class=  "panel-title">
+                                        <a href="#acc02">
+                                            Historical Review
+                                        </a>
+                                    </h4>
                                 </div>
-                            </div>
+                                <div class="panel-body" id="acc02">
+                                    <div class="timeline">
+
+                                        <div class="timeline-item">
+                                            <div class="timeline-item-date">17 Oktober 2016, 17:55</div>
+                                            <div class="timeline-item-image"><img src="assets/images/users/ahok.png"></div>
+                                            <div class="timeline-item-data">
+                                                <h4>Review #1</h4>
+                                                <p class="text-muted">Sampai dengan saat ini hasil Desk Audit Masih belum ada, tolong dilengkapi</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="timeline-item timeline-item-even">
+                                            <div class="timeline-item-date">18 Oktober 2016, 17:55</div>
+                                            <div class="timeline-item-image"><img src="assets/images/users/andre.png"></div>
+                                            <div class="timeline-item-data">
+                                                <h4>Feedback Review #1</h4>
+                                                <p class="text-muted">Data kurang lengkap masih belum ada bukti non-aktif perusahaaan dari Disnaker</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="timeline-item">
+                                            <div class="timeline-item-date">19 Oktober 2016, 17:55</div>
+                                            <div class="timeline-item-image"><img src="assets/images/users/ahok.png"></div>
+                                            <div class="timeline-item-data">
+                                             <h4>Review #2</h4>
+                                             <p class="text-muted">Ya Dilengkapi</p>
+                                         </div>
+                                     </div>
+
+                                     <div class="timeline-item timeline-item-even">
+                                        <div class="timeline-item-date">18 Oktober 2016, 17:55</div>
+                                        <div class="timeline-item-image"><img src="assets/images/users/andre.png"></div>
+                                        <div class="timeline-item-data">
+                                            <h4>Feedback Review #2</h4>
+                                            <p class="text-muted">Data telah lengkap</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-date">17 Oktober 2016, 17:55</div>
+                                        <div class="timeline-item-image"><img src="assets/images/users/ahok.png"></div>
+                                        <div class="timeline-item-data">
+                                            <h4>Review #3</h4>
+                                            <p class="text-muted">Baiklah</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-date">17 Oktober 2016, 17:55</div>
+                                        <div class="timeline-item-image"><img src="assets/images/users/ahok.png"></div>
+                                        <div class="timeline-item-data">
+                                            <h4>Review #4</h4>
+                                            <p class="text-muted">Sudah Baik, Saya Approve</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>                                
                         </div>
 
 
-                        <div class="form-group">
-                            <button class="btn btn-danger pull-right">Isi</button>
-                        </div>
+
                     </div>
+                    <!-- END ACCORDION -->    
+
+
                 </div>
-
-
-
             </div>
 
-            <!-- modal -->
-                <?php include "index-pelaksanaan-audit-approve.php" ?>
-            <!-- ./modal -->
 
-            <!-- ./email message -->
-                <?php include "include-copyright.php" ?>
 
         </div>
-        <!-- ./email template -->                        
+
+        <!-- modal -->
+        <?php include "index-pelaksanaan-audit-approve.php" ?>
+        <?php include "index-pelaksanaan-audit-review.php" ?>
+        <?php include "index-pelaksanaan-audit-closing.php" ?>
+        <?php include "index-pelaksanaan-audit-finish.php" ?>
+
+        <!-- ./modal -->
+
+        <!-- ./email message -->
 
     </div>
-    <!-- ./page content container -->
+    <!-- ./email template -->                        
 
-    <?php include "include-footer.php" ?>
+</div>
+<?php include "include-copyright.php" ?>
+
+</div>
+<!-- ./page content container -->
+
+<?php include "include-footer.php" ?>

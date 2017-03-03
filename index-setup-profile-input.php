@@ -91,52 +91,72 @@
                     -->
                 </div>
 
-            <div class="col-md-9">
+                <div class="col-md-9">
 
-                <div class="page-subtitle margin-bottom-0">
-                    <h3>Detail</h3>
-                </div>
-                <div class="form-group-one-unit margin-bottom-40">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group form-group-custom">
-                                <label>Login</label>
-                                <input type="text" class="form-control" value="AG123456"/>                                            
-                            </div>                        
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group form-group-custom">
-                                <label>Password:</label>
-                                <input type="password" class="form-control" value="password"/>                                            
-                            </div>                        
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group form-group-custom">
-                                <label>Re-Password:</label>
-                                <input type="password" class="form-control" value="password"/>                                            
-                            </div>                        
-                        </div>
+                    <div class="page-subtitle margin-bottom-0">
+                        <h3>Detail</h3>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group form-group-custom">
-                                <label>No-Telpon</label>
-                                <input type="text" class="form-control" value="0812345678"/>
+                    <div class="form-group-one-unit margin-bottom-40">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group form-group-custom">
+                                    <label>Login</label>
+                                    <input type="text" class="form-control" value="AG123456"/>                                            
+                                </div>                        
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-custom">
+                                    <label>Password:</label>
+                                    <input type="password" class="form-control" value="password"/>                                            
+                                </div>                        
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-custom">
+                                    <label>Re-Password:</label>
+                                    <input type="password" class="form-control" value="password"/>                                            
+                                </div>                        
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group form-group-custom">
-                                <label>Total PA 2016</label>
-                                <input type="text" class="form-control" value="70"/>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group form-group-custom">
+                                    <label>No-Telpon</label>
+                                    <input type="text" class="form-control" value="0812345678"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-custom">
+                                    <label>Total PA 2016</label>
+                                    <input type="text" class="form-control" value="70"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-custom">
+                                    <label>Total Temuan 2016</label>
+                                    <input type="text" class="form-control" value="25"/>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group form-group-custom">
-                                <label>Total Temuan 2016</label>
-                                <input type="text" class="form-control" value="25"/>
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="form-group form-group-custom">
+                                <label>Posisi</label>
+                                    <div class="form-select-wrapper">
+                                        <select class="form-control">
+                                            <option>Auditor 1</option>
+                                            <option>Auditor 2</option>
+                                            <option>Auditor 3</option>
+                                            <option>Auditor 4</option>
+                                            <option>Kepala Urusan</option>
+                                            <option>KSPI</option>
+                                            <option>no-position</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                             </div>
-                        </div>
-                    </div>                                                              
+                        </div>                                                             
                 </div>
 
 

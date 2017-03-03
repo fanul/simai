@@ -45,6 +45,7 @@
                     <table class="table table-bordered table-striped table-sortable searching-table">
                         <thead>
                             <tr>
+                                <th></th>
                                 <th>Icon</th>
                                 <th>Tahun</th>
                                 <th>Auditee</th>
@@ -58,6 +59,7 @@
                         <tfoot>
                             <tr>
                                 <th></th>
+                                <th></th>
                                 <th>2016</th>
                                 <th>Auditee</th>
                                 <th>Banyak PA</th>
@@ -69,9 +71,10 @@
                         
                         <tbody>
                             <tr>
+                                <td class="details-control"></td>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input-temuanfraud.php" class="glyphicon glyphicon-ban-circle tip" title="Isi temuan"></a>
+                                        <a href="index-pelaksanaan-audit-input-temuanfraud.php" class="btn btn-primary" title="Investigasi">Proses</a>
                                     </div>
 
                                 </td>
@@ -83,9 +86,10 @@
                                 <td>30</td>
                             </tr>
                             <tr>
+                                <td class="details-control"></td>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input-temuanfraud.php" class="glyphicon glyphicon-ban-circle tip" title="Isi temuan"></a>
+                                        <a href="index-pelaksanaan-audit-input-temuanfraud.php" class="btn btn-primary" title="Investigasi">Proses</a>
                                     </div>
 
                                 </td>
@@ -97,9 +101,10 @@
                                 <td>30</td>
                             </tr> 
                             <tr>
+                                <td></td>
                                 <td>
                                     <div class="checkbox checkbox-inline">
-                                        <a href="index-pelaksanaan-audit-input-temuanfraud.php" class="glyphicon glyphicon-ban-circle tip" title="Isi temuan"></a>
+                                        <a href="index-pelaksanaan-audit-input-temuanfraud.php" class="btn btn-primary" title="Investigasi">Proses</a>
                                     </div>
                                 </td>
                                 <td>2015</td>

@@ -40,11 +40,14 @@
                     <p>Berisi tentang alur Setup Profile</p>
                 </div> 
 
+                <a href="index-setup-profile-tambah.php" class="btn btn-primary">+ Tambah User</a>
+
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped table-sortable searching-table">
                         <thead>
                             <tr>
                                 <th>Icon</th>
+                                <th>Akses SIMAI</th>
                                 <th>Nama</th>
                                 <th>Kode</th>
                                 <th>Tipe User</th>
@@ -53,6 +56,7 @@
                         
                         <tfoot>
                             <tr>
+                                <th></th>
                                 <th></th>
                                 <th>Nama</th>
                                 <th>Kode</th>
@@ -67,6 +71,11 @@
                                         <a href="index-setup-profile-input.php" class="btn btn-primary tip" title="Proses User Agus">Proses</a>
                                     </div>
                                 </td>
+                                <td>
+                                    <div class="checkbox checkbox-inline">
+                                        <input type="checkbox" id="check_1" checked /><label for="check_1"></label>
+                                    </div>
+                                </td>
                                 <td>Agus</td>
                                 <td>111123</td>
                                 <td>Karyawan BPJSTK</td>
@@ -77,6 +86,11 @@
                                        <a href="index-setup-profile-input.php" class="btn btn-primary tip" title="Proses User Agus">Proses</a>
                                     </div>
                                 </td>
+                                <td>
+                                    <div class="checkbox checkbox-inline">
+                                        <input type="checkbox" id="check_2"/><label for="check_2"></label>
+                                    </div>
+                                </td>
                                 <td>OJK</td>
                                 <td>OJK</td>
                                 <td>Eksternal</td>
@@ -85,6 +99,11 @@
                                 <td>
                                     <div class="checkbox checkbox-inline">
                                         <a href="index-setup-profile-input.php" class="btn btn-primary tip" title="Proses User Agus">Proses</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox checkbox-inline">
+                                        <input type="checkbox" id="check_3" checked /><label for="check_3"></label>
                                     </div>
                                 </td>
                                 <td>Kanwil Jakarta</td>
